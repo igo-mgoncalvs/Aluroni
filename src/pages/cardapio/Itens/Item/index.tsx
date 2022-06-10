@@ -1,15 +1,15 @@
-import logo from 'assets/logo.svg'
 import styles from './Item.module.scss'
 import cardapio from '../itens.json'
+import classNames from 'classnames';
 
 type Props = typeof cardapio[0];
 
 export default function Item(props: Props) {
-    const { title, description, category, serving } = props
+    const { title, description, category, serving, size, price, photo } = props
     return (
         <div className={styles.item}>
             <div className={styles.item__imagem}>
-            <img src={logo} alt="imagem" />
+            <img src={photo} alt="imagem" />
             </div>
 
             <div className={styles.item__descricao}>
@@ -19,21 +19,25 @@ export default function Item(props: Props) {
                 </div>
 
                 <div className={styles.item__tags}>
-                    <div className={styles.item__tipo}>
+                    <div className={classNames({
+                        [styles.item__tipo]: true,
+                        [styles[`item__tipo__${category.label.toLowerCase()}`]]: true
+                    })}>
                         {category.label}
                     </div>
 
                     <div className={styles.item__porcao}>
-                        {serving}g
+                        {size}g
                     </div>
 
-                    <div className={styles.item__qtdpessoa}>
-                        serve 2 pessoas
+                    <div className={styles.item__qtdpessoas}>
+                        serve {serving} pessoas
                     </div>
 
                     <div className={styles.item__valor}>
-                        R$ 50,00
+                        R$ {price}
                     </div>
+                    
                 </div>
             </div>
         </div>
