@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Buscador.module.scss'
+import styles from './Buscador.module.scss';
 import { CgSearch } from 'react-icons/cg';
 
 interface Props {
