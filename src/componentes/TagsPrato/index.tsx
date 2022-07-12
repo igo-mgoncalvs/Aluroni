@@ -12,7 +12,7 @@ export default function TagsPrato({
     return (
         <div className={styles.tags}>
             <div className={classNames({
-                [styles.tags_tipo]: true,
+                [styles.tags__tipo]: true,
                 [styles[`tags__tipo__${category.label.toLowerCase()}`]]: true
             })}>
                 {category.label}

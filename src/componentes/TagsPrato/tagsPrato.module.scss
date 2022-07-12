@@ -17,9 +17,9 @@ $veganos: #80aa40;
   @media (max-width: $mobile) {
     justify-content: flex-start;
   }
-div {
-    margin: 10px;
-  }
+  div {
+      margin: 10px;
+    }
   &__tipo {
     align-items: center;
     border-radius: 2px;
@@ -43,7 +43,7 @@ div {
       background-color: $veganos;
     }
   }
-  &__porcao,
+  &__porcao
   &__qtdpessoas,
   &__valor {
     align-items: center;
