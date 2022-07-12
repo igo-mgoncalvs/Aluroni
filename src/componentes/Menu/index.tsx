@@ -8,10 +8,10 @@ export default function Menu () {
         to: '/Aluroni'
     }, {
         label: 'Cardapio',
-        to: '/Cardapio'
+        to: 'Aluroni/Cardapio'
     }, {
         label: 'Sobre',
-        to: '/Sobre'
+        to: 'Aluroni/Sobre'
     }];
     return (
         <nav className={styles.menu}>
