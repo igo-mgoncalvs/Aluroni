@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Menu () {
     const rotas = [{
         label: 'Início',
-        to: '/Aluroni'
+        to: 'Aluroni/ '
     }, {
         label: 'Cardapio',
         to: 'Aluroni/Cardapio'
