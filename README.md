@@ -16,3 +16,4 @@ Nas imagem a seguir estão as tres telas principais do site que são, inicio, ca
 
 *Nas telas de inicio e cardapio os ao clicar nos pratos ou em "Ver mais" você será redirecionado para uma pagina onde estarão todas as informações detalhadas do prato*
 
+<img src="src/assets/ImagensReadme/Prato (3).png" alt="Três telas principais"></img>
