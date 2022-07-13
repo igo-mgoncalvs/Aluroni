@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Menu () {
     const rotas = [{
         label: 'Início',
-        to: 'Aluroni/ '
+        to: '/ '
     }, {
         label: 'Cardapio',
-        to: 'Aluroni/Cardapio'
+        to: 'Cardapio'
     }, {
         label: 'Sobre',
-        to: 'Aluroni/Sobre'
+        to: 'Sobre'
     }];
     return (
         <nav className={styles.menu}>

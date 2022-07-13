@@ -16,7 +16,7 @@ export default function Prato () {
     }
 
     return (
-        <>
+        <PaginaPadrao>
             <button className={styles.voltar} onClick={() => navigate(-1)}>
                 {'< Voltar'} 
             </button>
@@ -38,6 +38,6 @@ export default function Prato () {
                     <TagsPrato {...prato}/>
                 </div>
             </section>
-        </>
+        </PaginaPadrao>
     );
 }

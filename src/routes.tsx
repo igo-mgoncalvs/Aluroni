@@ -14,12 +14,12 @@ export default function AppRouter() {
             <Rauter>
                 <Menu />
                 <Routes>
-                    <Route path='Aluroni/' element={<PaginaPadrao />} >
+                    <Route path='/' element={<PaginaPadrao />} >
                         <Route index element={<Inicio />} />
                         <Route path='cardapio' element={<Cardapio />} />
                         <Route path='sobre' element={<Sobre />} />
-                        <Route path='prato/:id' element={<Prato />} />
                     </Route>
+                    <Route path='prato/:id' element={<Prato />} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
                 <Footer />
